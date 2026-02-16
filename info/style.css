@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  background: #111;
+  color: #fff;
+  font-family:'Gulim';
+}
+
+@font-face {
+  font-family: 'Gulim';
+  src: url('../gulim.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.screen.info {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 3vh 3vw;
+  box-sizing: border-box;
+}
+
+/* 사건설명 텍스트 */
+.label {
+  position: absolute;
+  top: 20px;
+  left: 120px;
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+/* 아이스크림 */
+.ice {
+  position: absolute;
+  bottom: 10vh;
+  left: 20%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2vw;
+}
+
+.ice img {
+  width: 30vw;   /* 비율 기준 */
+  max-width: 300px;
+  height: auto;
+}
+
+/* 본문 텍스트 */
+.story-text {
+  position: absolute;
+  top: 40vh;
+  left: 10vw;
+  max-width: 70vw;
+  font-size: 1.5vw;
+  line-height: 1.6;
+}
+
+/* 치즈버거 */
+.cheese {
+  position: absolute;
+  bottom: 70vh;
+  left: 10vw;
+}
+
+.cheese img {
+  width: 200vw;
+  max-width: 300px;
+}
+
+/* 밀크쉐이크 */
+.milk {
+  position: absolute;
+  top: 70vh;
+  right: 5vw;
+}
+
+.milk img {
+  width: 90vw;
+  max-width: 300px;
+}
+
+/* ▶ 다음 버튼 */
+.next-btn {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+
+  width: 0;
+  height: 0;
+
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid #aaa;
+
+  background: none;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.next-btn:hover {
+  opacity: 1;
+}

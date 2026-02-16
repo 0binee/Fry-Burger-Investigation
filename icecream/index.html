@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icecream</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div class="container">
+        <header class="case-header">
+            <h1>Case No. FF-M-003</h1>
+            <p class="description">
+                간단한 요약 감튀가 아이스크림에 빠져 죽어있다 한두문장정도 간단한 요약 감튀가 뭐 어떻게 죽어있다 <br>
+                다 한두문장정도간단한 요약 감튀가 뭐 어떻게 죽어있다 한두문장정도간단한 요약 감튀가 <br>
+                뭐 어떻게 죽어있다 한두문장정도
+            </p>
+        </header>
+
+    <a href="../play/index.html" class="home-btn">
+            <span class="home-text">🏠</span>
+        </a>
+    
+    <main class="crime-scene">
+            <div class="victim-wrapper">
+                <img src="../assets/icecream.png" alt="Dead Potato" class="victim-img">
+            </div>
+    
+    <div class="evidence-wrapper">
+                <span class="marker marker-1">3</span>
+                
+                <img src="../assets/evidence/police report/PR_ff-m-003.jpg" class="evidence-img doc-1" alt="Police Report"
+                     data-title="TRANSCRIPT #01 (Ice Cream)"
+                     data-desc="용의자 '아이스크림'에 대한 첫 번째 심문 녹취록. 사건 당일 자신의 행적에 대해 진술하고 있으나 어딘가 차가운 태도를 유지하고 있다.">
+                
+                <img src="../assets/evidence/transcript/ice/ts_ice_01.jpg" class="evidence-img doc-2" alt="Transcript 01"
+                     data-title="TRANSCRIPT #01 (Ice Cream)"
+                     data-desc="용의자 '아이스크림'에 대한 첫 번째 심문 녹취록. 사건 당일 자신의 행적에 대해 진술하고 있으나 어딘가 차가운 태도를 유지하고 있다.">
+                
+                <img src="../assets/evidence/transcript/ice/ts_ice_02.jpg" class="evidence-img doc-3" alt="Transcript 02"
+                     data-title="TRANSCRIPT #02 (Ice Cream)"
+                     data-desc="추가 심문 녹취록. 수사관의 압박 질문에도 불구하고 용의자는 감정의 동요 없이 일관된 주장을 펼치고 있다.">
+
+                <img src="../assets/evidence/transcript/ice/ts_ice_03.jpg" class="evidence-img doc-4" alt="Transcript 03"
+                     data-title="TRANSCRIPT #03 (Ice Cream)"
+                     data-desc="마지막 심문 녹취록. 알리바이의 모순점을 지적받자 미세하게 흔들리는 모습을 보였으나 이내 평정심을 되찾았다.">
+
+                <img src="../assets/evidence/plc-r test/pcl-r_ice.jpg" class="evidence-img doc-5" alt="Transcript 04"
+                     data-title="PCL-R TEST RESULT"
+                     data-desc="용의자 '아이스크림'을 대상으로 진행한 사이코패스 체크리스트(PCL-R) 검사 결과지. 공감 능력 결여 및 냉담함 항목에서 매우 높은 점수가 측정되었다.">
+            </div>
+            
+        <div id="documentModal" class="modal">
+        <div class="modal-content-box">
+            <span class="close-btn">&times;</span>
+            
+            <div class="modal-image-area">
+                <img id="modalImage" src="" alt="Evidence Image">
+            </div>
+            
+            <div class="modal-text-area">
+                <h2 id="modalTitle">증거물 제목</h2>
+                <p id="modalDescription">여기에 증거물에 대한 요약 설명이 들어갑니다.</p>
+            </div>
+        </div>
+    </div>
+    </main>
+    <script src="sketch.js"></script>
+</body>
+</html>

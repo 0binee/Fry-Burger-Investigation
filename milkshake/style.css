@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gulim'; /* 모든 글꼴 굴림체 적용 */
+}
+  
+@font-face {
+    font-family: 'Gulim';
+    src: url('../gulim.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+body {
+    background: #000; /* 검은 배경 */
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden; /* 스크롤 방지 (화면에 딱 맞게) */
+}
+
+/* 1. 상단 텍스트 (사건 번호 및 설명) */
+.case-header {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 10;
+    color: #fff;
+}
+
+.case-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.case-header .description {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #888; /* 회색 텍스트 */
+    max-width: 600px;
+    word-break: keep-all;
+}
+
+/* 2. 홈 버튼 + 이모지에 기본적으로 들어가는 컬러를 제거하고 흰색처럼 보이게 하려면 필터 필요할 수 있음. 
+   하지만 🏠 이모지는 OS마다 색이 다르므로 그대로 둠. */
+.home-btn {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    text-decoration: none;
+    font-size: 40px; /* 아이콘 크기 */
+    z-index: 20;
+    cursor: pointer;
+}
+
+/* 3. 메인 이미지 영역 (범인, 피해자) */
+.crime-scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* 이미지가 클릭을 방해하지 않도록 */
+}
+
+/* 위치 잡기 */
+.victim-wrapper {
+    position: absolute;
+    bottom: 35%;
+    left: 10%;
+    /* transform: rotate(-15deg); /* 살짝 기울어짐 */
+    z-index:10;
+}
+
+/* 이미지 스타일 (흰색 라인아트처럼 보이게) */
+.victim-img {
+    width: 1000px; /* 이미지 크기 조절 */
+    height: auto;
+}
+    /* 만약 이미지가 컬러라면 흑백+밝게 처리하여 흰색 선처럼 만듦 */
+    /* filter: grayscale(100%) brightness(500%); 
+
+/* 4. 증거물 전체 위치 */
+.evidence-wrapper {
+    position: absolute;
+    top: 65%;      /* 위쪽 여백 */
+    left: 10%;    /* 오른쪽 여백 */
+    width: 800px;  /* 문서들이 놓일 공간 크기 */
+    height: 400px;
+    z-index: 10;
+    pointer-events: auto; /*메인 이미지와 별개의 마우스 인식용*/
+}
+
+/* 5. 증거물 이미지 공통 스타일 */
+.evidence-img {
+    position: absolute; /* 겹치게 하기 위해 absolute 사용 */
+    width: 200px;       /* 문서 이미지 크기 (적절히 조절 가능) */
+    height: auto;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5); /* 그림자 효과 */
+    border: 1px solid #ccc; /* 문서 테두리 */
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), z-index 0s; /* 마우스 올렸을 때 효과용 */
+    cursor: pointer; /* 마우스 올리면 손가락 모양 */
+}
+
+/* 각 문서별 배치 (흩뿌려진 느낌) */
+.doc-1 {
+    top: 0;
+    left: 20px;
+    z-index: 1;
+    /*transform: rotate(-10deg); /* 왼쪽으로 기울임 */
+}
+
+.doc-2 {
+    top: 0px;
+    left: 300px;
+    z-index: 2;
+    /*transform: rotate(5deg);   /* 오른쪽으로 살짝 기울임 */
+}
+
+.doc-3 {
+    top: 0px;
+    left: 600px;
+    z-index: 3;
+    /*transform: rotate(15deg);  /* 더 많이 기울임 */
+}
+
+/* 마우스 올리면 살짝 떠오르는 효과 (선택사항) */
+.evidence-img:hover {
+    transform: scale(1.2) rotate(0deg) !important; /* 회전도 0도로 정렬해서 보기 편하게 */
+    z-index: 99 !important;
+    border-color: #fff; /* 테두리 하얗게 강조 */
+}
+
+/* =========================================
+   조건 2: 클릭 시 나오는 모달 (Modal) 디자인
+   ========================================= */
+
+/* 배경 (검은색 반투명) */
+.modal {
+    display: none; /* 평소엔 숨김 */
+    position: fixed; 
+    z-index: 1000; /* 모든 것보다 위에 */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.85); /* 짙은 검정 배경 */
+    backdrop-filter: blur(5px); 
+    pointer-events: auto !important; /*마우스 이벤트를 강제로 활성화해서 스크롤 가능하게 함 */
+}
+
+/* 이미지를 감싸는 스크롤 박스 (첨부한 스크린샷의 흰 테두리 영역) */
+.modal-scroll-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* 사이즈 설정 */
+    width: 800px;  /* 가로 폭 고정 (원하는대로 조절 가능) */
+    height: 85vh;  /* 화면 높이의 85%만 차지 */
+    
+    /* ★ 핵심: 내용이 넘치면 스크롤 생김 ★ */
+    overflow-y: scroll; /* scroll로 강제 설정해보기 */
+    overflow-x: hidden; /* 가로 스크롤 방지 */
+    
+    background-color: #f0f0f0; /* 문서 배경색 */
+    border: 2px solid white;   /* 외곽 흰색 테두리 */
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    
+    /* 스크롤바 디자인 (크롬/사파리) */
+    scrollbar-width: thin;
+    scrollbar-color: #555 #222;
+}
+
+/* 실제 확대된 이미지 */
+.modal-content {
+    width: 100%; /* 박스 너비에 꽉 차게 */
+    height: auto; /* 비율 유지하며 길어짐 */
+    display: block;
+}
