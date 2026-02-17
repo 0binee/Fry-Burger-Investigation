@@ -87,7 +87,7 @@ body {
     top: 65%;      /* 위쪽 여백 */
     left: 10%;    /* 오른쪽 여백 */
     width: 800px;  /* 문서들이 놓일 공간 크기 */
-    height: 400px;
+    height: 200px;
     z-index: 10;
     pointer-events: auto; /*메인 이미지와 별개의 마우스 인식용*/
 }
