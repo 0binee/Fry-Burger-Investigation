@@ -35,7 +35,7 @@ body {
 }
 
 .case-header .description {
-    font-size: 12px;
+    font-size: 18px;
     line-height: 1.6;
     color: #FFFEF7; /* 회색 텍스트 */
     max-width: 600px;
@@ -84,8 +84,8 @@ body {
 /* 4. 증거물 전체 위치 */
 .evidence-wrapper {
     position: absolute;
-    top: 65%;      /* 위쪽 여백 */
-    left: 10%;    /* 오른쪽 여백 */
+    top: 26%;      /* 위쪽 여백 */
+    left: 30%;    /* 오른쪽 여백 */
     width: 800px;  /* 문서들이 놓일 공간 크기 */
     height: 249px;
     z-index: 10;
