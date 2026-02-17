@@ -26,23 +26,7 @@ body {
   top: 20px;
   left: 120px;
   opacity: 0.5;
-  font-size: 14px;
-}
-
-/* 아이스크림 */
-.ice {
-  position: absolute;
-  bottom: 10vh;
-  left: 20%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 2vw;
-}
-
-.ice img {
-  width: 30vw;   /* 비율 기준 */
-  max-width: 300px;
-  height: auto;
+  font-size: 30px;
 }
 
 /* 본문 텍스트 */
@@ -53,30 +37,6 @@ body {
   max-width: 70vw;
   font-size: 1.5vw;
   line-height: 1.6;
-}
-
-/* 치즈버거 */
-.cheese {
-  position: absolute;
-  bottom: 70vh;
-  left: 10vw;
-}
-
-.cheese img {
-  width: 200vw;
-  max-width: 300px;
-}
-
-/* 밀크쉐이크 */
-.milk {
-  position: absolute;
-  top: 70vh;
-  right: 5vw;
-}
-
-.milk img {
-  width: 90vw;
-  max-width: 300px;
 }
 
 /* ▶ 다음 버튼 */
