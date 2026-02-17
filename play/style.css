@@ -14,7 +14,7 @@
 }
 
 body {
-  background: #000;
+  background: #1B1A1A;
   min-height: 100vh;
   margin: 0;
 }
@@ -36,7 +36,7 @@ body {
   font-size: 25px;
   line-height: 160%;
   letter-spacing: -0.02em;
-  color: #fff;
+  color: #FFFEF7;
 }
 
 .illust-frame {
@@ -94,14 +94,14 @@ body {
   left: 80px;
   border-top: 43px solid transparent;
   border-bottom: 43px solid transparent;
-  border-right: 50px solid #FFFFFF;
+  border-right: 50px solid #FFFEF7;
 }
 
 .arrow.right {
   right: 80px;
   border-top: 43px solid transparent;
   border-bottom: 43px solid transparent;
-  border-left: 50px solid #FFFFFF;
+  border-left: 50px solid #FFFEF7;
 }
 
 button {
@@ -117,7 +117,7 @@ button {
 }
 
 button:hover {
-  background: white;
-  color: black;
+  background: #FFFEF7;
+  color: #1B1A1A;
 }
 
