@@ -22,23 +22,24 @@ body {
 /* 1. 상단 텍스트 (사건 번호 및 설명) */
 .case-header {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 120px;
+    left: 120px;
     z-index: 10;
     color: #FFFEF7;
 }
 
 .case-header h1 {
-    font-size: 24px;
+    font-size: 100px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
 .case-header .description {
-    font-size: 18px;
+    font-size: 70px;
     line-height: 1.6;
-    color: #FFFEF7; /* 회색 텍스트 */
-    max-width: 1000px;
+    max-width: 2500px;   /* ← 가로 길이 확장 */
+    width: 60vw;         /* 화면 기준으로 더 넓게 */
+    color: #FFFEF7; 
     word-break: keep-all;
 }
 
@@ -46,10 +47,10 @@ body {
    하지만 🏠 이모지는 OS마다 색이 다르므로 그대로 둠. */
 .home-btn {
     position: absolute;
-    top: 30px;
-    right: 40px;
+    top: 80px;
+    left: 1100px;
     text-decoration: none;
-    font-size: 40px; /* 아이콘 크기 */
+    font-size: 150px; /* 아이콘 크기 */
     z-index: 20;
     cursor: pointer;
 }
@@ -67,16 +68,28 @@ body {
 /* 위치 잡기 */
 .victim-wrapper {
     position: absolute;
-    bottom: 35%;
-    left: 10%;
-    /* transform: rotate(-15deg); /* 살짝 기울어짐 */
-    z-index:10;
+    top: 55%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+    width: 95vw;          /* 화면 기준 비율 */
+    height: 90vw;         /* 화면 기준 높이 */
+    
+    width: 100vw;      /*가로 전체 */
+    height: 100vh;     /*가로 전체 */
+
+    /* ackground-color: #111;   /* 배경 (포스터 느낌) */
+    display: flex;
+    justify-content: center;
+    align-items: cover;
+
+    overflow: hidden;
 }
 
 /* 이미지 스타일 (흰색 라인아트처럼 보이게) */
 .victim-img {
-    width: 1000px; /* 이미지 크기 조절 */
-    height: auto;
+    max-width: 80%;
+   max-height: 80%;
+   object-fit: contain;   /* 비율 유지 */
 }
     /* 만약 이미지가 컬러라면 흑백+밝게 처리하여 흰색 선처럼 만듦 */
     /* filter: grayscale(100%) brightness(500%); 
@@ -95,31 +108,29 @@ body {
 /* 5. 증거물 이미지 공통 스타일 */
 .evidence-img {
     position: absolute; /* 겹치게 하기 위해 absolute 사용 */
-    width: 200px;       /* 문서 이미지 크기 (적절히 조절 가능) */
+    bottom: -1800px;
+    width: 300px;       /* 문서 이미지 크기 (적절히 조절 가능) */
     height: auto;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.5); /* 그림자 효과 */
-    border: 1px solid #ccc; /* 문서 테두리 */
+    border: 10px solid #FFFEF7; /* 문서 테두리 */
     transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), z-index 0s; /* 마우스 올렸을 때 효과용 */
     cursor: pointer; /* 마우스 올리면 손가락 모양 */
 }
 
 /* 각 문서별 배치 (흩뿌려진 느낌) */
 .doc-1 {
-    top: 0;
     left: 20px;
     z-index: 1;
     /*transform: rotate(-10deg); /* 왼쪽으로 기울임 */
 }
 
 .doc-2 {
-    top: 0px;
     left: 300px;
     z-index: 2;
     /*transform: rotate(5deg);   /* 오른쪽으로 살짝 기울임 */
 }
 
 .doc-3 {
-    top: 0px;
     left: 600px;
     z-index: 3;
     /*transform: rotate(15deg);  /* 더 많이 기울임 */
