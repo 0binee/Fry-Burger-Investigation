@@ -101,7 +101,7 @@ body {
     position: absolute;
     bottom: 7%;      /* 아래쪽 여백 */
     left: 140px;    /* 왼쪽 여백 타이포랑 맞춤 */
-    width: 800px;  /* 문서들이 놓일 공간 크기 */
+    width: 2880px;  /* 문서들이 놓일 공간 크기 */
     height: 249px;
     z-index: 10;
     pointer-events: auto; /*메인 이미지와 별개의 마우스 인식용*/
