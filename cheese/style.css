@@ -97,8 +97,8 @@ body {
 /* 4. 증거물 전체 위치 */
 .evidence-wrapper {
     position: absolute;
-    top: 26%;      /* 위쪽 여백 */
-    left: 30%;    /* 오른쪽 여백 */
+    bottom: 7%;      /* 아래쪽 여백 */
+    left: 140px;    /* 왼쪽 여백 타이포랑 맞춤 */
     width: 800px;  /* 문서들이 놓일 공간 크기 */
     height: 249px;
     z-index: 10;
@@ -108,7 +108,7 @@ body {
 /* 5. 증거물 이미지 공통 스타일 */
 .evidence-img {
     position: absolute; /* 겹치게 하기 위해 absolute 사용 */
-    bottom: -1800px;
+    bottom: -150px;
     width: 300px;       /* 문서 이미지 크기 (적절히 조절 가능) */
     height: auto;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.5); /* 그림자 효과 */
@@ -119,19 +119,55 @@ body {
 
 /* 각 문서별 배치 (흩뿌려진 느낌) */
 .doc-1 {
-    left: 20px;
+    left: 0px;
     z-index: 1;
     /*transform: rotate(-10deg); /* 왼쪽으로 기울임 */
 }
 
 .doc-2 {
-    left: 300px;
+    left: 400px;
     z-index: 2;
     /*transform: rotate(5deg);   /* 오른쪽으로 살짝 기울임 */
 }
 
 .doc-3 {
-    left: 600px;
+    left: 800px;
+    z-index: 3;
+    /*transform: rotate(15deg);  /* 더 많이 기울임 */
+}
+
+.doc-4 {
+    left: 1200px;
+    z-index: 3;
+    /*transform: rotate(15deg);  /* 더 많이 기울임 */
+}
+
+.doc-5 {
+    left: 1600px;
+    z-index: 3;
+    /*transform: rotate(15deg);  /* 더 많이 기울임 */
+}
+
+.doc-6 {
+    left: 2200px;
+    z-index: 3;
+ 
+}
+
+.doc-7 {
+    left: 2780px;
+    z-index: 3;
+    /*transform: rotate(15deg);  /* 더 많이 기울임 */
+}
+
+.doc-8 {
+    left: 3500px;
+    z-index: 3;
+    /*transform: rotate(15deg);  /* 더 많이 기울임 */
+}
+
+.doc-9 {
+    left: 4000px;
     z-index: 3;
     /*transform: rotate(15deg);  /* 더 많이 기울임 */
 }
