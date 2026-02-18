@@ -7,8 +7,8 @@
 
 body {
   margin: 0;
-  background: #111;
-  color: #fff;
+  background: #1B1A1A;
+  color: #FFFEF7;
   font-family:'Gulim';
 }
 
@@ -20,8 +20,8 @@ body {
 }
 
 body {
-  background: #111;
-  color: #fff;
+  background: #1B1A1A;
+  color: #FFFEF7;
 }
 
 .screen {
@@ -63,12 +63,12 @@ button {
   border-radius: 999px; 
   border: 1px solid white;
   background: transparent;
-  color: white;
+  color: #FFFEF7;
   cursor: pointer;
   font-size: 60px; /* 글자 크기 */
 }
 
 button:hover {
-  background: white;
-  color: black;
+  background: #FFFEF7;
+  color: #1B1A1A;
 }

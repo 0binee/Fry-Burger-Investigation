@@ -6,9 +6,9 @@
 }
   
 @font-face {
-    font-family: 'Gulim';
-    src: url('../gulim.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Pretendard-SemiBold';
+    src: url('../Pretendard-SemiBold.otf') format('opentype');
+    font-weight: 600;
     font-style: normal;
 }
   
@@ -38,7 +38,7 @@ body {
     font-size: 18px;
     line-height: 1.6;
     color: #FFFEF7; /* 회색 텍스트 */
-    max-width: 800px;
+    max-width: 1000px;
     word-break: keep-all;
 }
 
