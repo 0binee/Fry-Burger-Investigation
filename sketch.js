@@ -1,3 +1,3 @@
 document.getElementById("startBtn").addEventListener("click", () => {
-  window.location.href = "/Fry-Burger-Investigation/info/";
+  window.location.href = "info/";
 });

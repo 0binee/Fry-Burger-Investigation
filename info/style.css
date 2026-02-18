@@ -23,34 +23,34 @@ body {
 /* 사건설명 텍스트 */
 .label {
   position: absolute;
-  top: 20px;
-  left: 120px;
+  top: 43vh;
+  left: 6vw;
   opacity: 0.5;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 /* 본문 텍스트 */
 .story-text {
   position: absolute;
-  top: 40vh;
-  left: 10vw;
+  top: 45vh;
+  left: 6vw;
   max-width: 70vw;
-  font-size: 30px;
+  font-size: 60px;
   line-height: 1.6;
 }
 
 /* ▶ 다음 버튼 */
 .next-btn {
   position: absolute;
-  bottom: 40px;
-  right: 40px;
+  bottom: 1350px;
+  right: 1500px;
 
   width: 0;
   height: 0;
 
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 30px solid #aaa;
+  border-top: 3vh solid transparent;
+  border-bottom: 3vh solid transparent;
+  border-left: 3vw solid #aaa;
 
   background: none;
   cursor: pointer;
