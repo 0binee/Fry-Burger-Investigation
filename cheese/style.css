@@ -21,6 +21,7 @@ body {
 
 /* 1. 상단 텍스트 (사건 번호 및 설명) */
 .case-header {
+    font-family: 'Pretendard-SemiBold', sans-serif;
     position: absolute;
     top: 120px;
     left: 120px;
@@ -130,6 +131,9 @@ body {
     /*transform: rotate(5deg);   /* 오른쪽으로 살짝 기울임 */
 }
 
+
+}
+
 .doc-3 {
     left: 700px;
     z-index: 3;
@@ -145,13 +149,13 @@ body {
 .doc-5 {
     left: 1400px;
     z-index: 3;
-    /*transform: rotate(15deg);  /* 더 많이 기울임 */
+ 
 }
 
 .doc-6 {
     left: 1750px;
     z-index: 3;
- 
+    /*transform: rotate(15deg);  /* 더 많이 기울임 */
 }
 
 .doc-7 {
@@ -162,6 +166,9 @@ body {
 
 .doc-8 {
     left: 2450px;
+    width: 500px;       /* 문서 이미지 크기 (적절히 조절 가능) */
+    height: auto;
+    bottom: -100px;
     z-index: 3;
     /*transform: rotate(15deg);  /* 더 많이 기울임 */
 }
@@ -174,10 +181,9 @@ body {
     z-index: 3;
     /*transform: rotate(15deg);  /* 더 많이 기울임 */
 }
-
 .doc-10 {
     left: 3350px;
-    width: 500px;       /* 문서 이미지 크기 (적절히 조절 가능) */
+    width:500px;       /* 문서 이미지 크기 (적절히 조절 가능) */
     height: auto;
     bottom: -100px;
     z-index: 3;
@@ -185,14 +191,6 @@ body {
 }
 .doc-11 {
     left: 3900px;
-    width:500px;       /* 문서 이미지 크기 (적절히 조절 가능) */
-    height: auto;
-    bottom: -100px;
-    z-index: 3;
-    /*transform: rotate(15deg);  /* 더 많이 기울임 */
-}
-.doc-12 {
-    left: 4450px;
     width:500px;       /* 문서 이미지 크기 (적절히 조절 가능) */
     height: auto;
     bottom: -100px;
@@ -250,7 +248,7 @@ body {
     top: 15px;
     right: 20px;
     color: #FFFEF7;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     cursor: pointer;
     z-index: 10;
@@ -287,7 +285,7 @@ body {
 }
 
 #modalTitle {
-    font-size: 24px;
+    font-size: 60px;
     margin-bottom: 20px;
     padding-bottom: 10px;
     font-weight: bold;
@@ -295,7 +293,7 @@ body {
 }
 
 #modalDescription {
-    font-size: 14px;
+    font-size: 36px;
     line-height: 1.8;
     color: #ccc; /* 약간 흐린 흰색 */
     white-space: pre-wrap; /* 줄바꿈과 띄어쓰기 인식 */
