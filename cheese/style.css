@@ -291,7 +291,7 @@ body {
 }
 
 #modalDescription {
-    font-size: 36px;
+    font-size: 48px;
     line-height: 1.8;
     color: #ccc; /* 약간 흐린 흰색 */
     white-space: pre-wrap; /* 줄바꿈과 띄어쓰기 인식 */
