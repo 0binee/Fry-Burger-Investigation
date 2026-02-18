@@ -91,14 +91,14 @@ body {
 }
 
 .arrow.left {
-  left: 80px;
+  left: 1800px;
   border-top: 43px solid transparent;
   border-bottom: 43px solid transparent;
   border-right: 50px solid #FFFEF7;
 }
 
 .arrow.right {
-  right: 80px;
+  right: 1800px;
   border-top: 43px solid transparent;
   border-bottom: 43px solid transparent;
   border-left: 50px solid #FFFEF7;
