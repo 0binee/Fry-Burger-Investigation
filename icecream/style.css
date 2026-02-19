@@ -6,8 +6,8 @@
 }
   
 @font-face {
-    font-family: 'Pretendard-SemiBold';
-    src: url('../Pretendard-SemiBold.otf') format('opentype');
+    font-family:'Gulim';
+    src: url('../gulim.ttf');
     font-weight: 600;
     font-style: normal;
 }
@@ -266,7 +266,7 @@ body {
 }
 
 #modalTitle {
-    font-size: 24px;
+    font-size: 60px;
     margin-bottom: 20px;
     padding-bottom: 10px;
     font-weight: bold;
@@ -274,7 +274,7 @@ body {
 }
 
 #modalDescription {
-    font-size: 14px;
+    font-size: 48px;
     line-height: 1.8;
     color: #ccc; /* 약간 흐린 흰색 */
     white-space: pre-wrap; /* 줄바꿈과 띄어쓰기 인식 */
