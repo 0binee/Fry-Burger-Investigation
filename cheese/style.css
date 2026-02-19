@@ -181,13 +181,26 @@ body {
     /*transform: rotate(15deg);  /* 더 많이 기울임 */
 }
 .doc-10 {
+<<<<<<< HEAD
     left: 3550px;
+=======
+    left: 3350px;
     width:500px;       /* 문서 이미지 크기 (적절히 조절 가능) */
     height: auto;
     bottom: -100px;
     z-index: 3;
     /*transform: rotate(15deg);  /* 더 많이 기울임 */
 }
+.doc-11 {
+    left: 3900px;
+>>>>>>> b4561509b1f31c1df07ae6bafefc5cf2ee348caf
+    width:500px;       /* 문서 이미지 크기 (적절히 조절 가능) */
+    height: auto;
+    bottom: -100px;
+    z-index: 3;
+    /*transform: rotate(15deg);  /* 더 많이 기울임 */
+}
+<<<<<<< HEAD
 .doc-11 {
     left: 4100px;
     width:500px;       /* 문서 이미지 크기 (적절히 조절 가능) */
@@ -196,6 +209,8 @@ body {
     z-index: 3;
     /*transform: rotate(15deg);  /* 더 많이 기울임 */
 }
+=======
+>>>>>>> b4561509b1f31c1df07ae6bafefc5cf2ee348caf
 /* 마우스 올리면 살짝 떠오르는 효과 (선택사항) */
 .evidence-img:hover {
     transform: scale(1.2) rotate(0deg) !important; /* 회전도 0도로 정렬해서 보기 편하게 */
