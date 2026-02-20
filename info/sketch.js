@@ -24,5 +24,4 @@ document.addEventListener("DOMContentLoaded", () => {
       adModal.classList.remove("show");
     }
   });
-
 });
