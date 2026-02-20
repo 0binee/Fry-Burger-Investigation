@@ -60,3 +60,46 @@ body {
 .next-btn:hover {
   opacity: 1;
 }
+
+/* ===========================
+   🔻 하단 광고 배너
+=========================== */
+
+.ad-frame {
+    position: absolute;
+    top: 80px;              /* 원하는 위치 */
+    left: 100px;
+
+    width: 660px;
+    height: 180px;
+
+    overflow: hidden;       /* 🔥 잘림 효과 핵심 */
+    border: 2px solid #FFFEF7;
+    cursor: pointer;
+}
+
+.ad-thumb {
+    width: 120%;
+    transform: translateX(-18%) scale(1.1);
+    transition: transform 0.4s ease;
+}
+
+.ad-frame:hover .ad-thumb {
+    transform: translateX(-5%) scale(1.15);
+}
+
+.ad-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease;
+
+    z-index: 9999;
+}
