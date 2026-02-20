@@ -103,3 +103,31 @@ body {
 
     z-index: 9999;
 }
+
+/* 열렸을 때 */
+.ad-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ad-full {
+    max-width: 80vw;
+    max-height: 80vh;
+
+    transform: scale(0.8);
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* 등장 애니메이션 */
+.ad-modal.show .ad-full {
+    transform: scale(1);
+}
+
+.ad-close {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
